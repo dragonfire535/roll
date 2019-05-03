@@ -12,7 +12,6 @@ const client = new Client({
 
 client.registry
 	.registerDefaultTypes()
-	.registerTypesIn(path.join(__dirname, 'types'))
 	.registerGroups([
 		['util', 'Utility'],
 		['role', 'Role Management']
