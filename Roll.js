@@ -14,7 +14,7 @@ client.registry
 	.registerDefaultTypes()
 	.registerGroups([
 		['util', 'Utility'],
-		['role', 'Role Management']
+		['roles', 'Role Management']
 	])
 	.registerDefaultCommands({
 		help: false,
