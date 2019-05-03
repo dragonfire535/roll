@@ -1,0 +1,56 @@
+{
+	"name": "roll",
+	"version": "1.0.0",
+	"description": "A single server roll-giving bot.",
+	"main": "Roll.js",
+	"scripts": {
+		"test": "npm run lint",
+		"lint": "eslint . --ext .js --ext .json",
+		"start": "node Roll.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dragonfire535/roll.git"
+	},
+	"keywords": [
+		"bot",
+		"commando",
+		"discord",
+		"discord-api",
+		"discord-bot",
+		"discord-js",
+		"discord-js-commando"
+	],
+	"author": "dragonfire535 <danielbodendahl@gmail.com>",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/dragonfire535/roll/issues"
+	},
+	"homepage": "https://github.com/dragonfire535/roll#readme",
+	"engines": {
+		"node": ">=11"
+	},
+	"dependencies": {
+		"@discordjs/uws": "^11.149.1",
+		"common-tags": "^1.8.0",
+		"discord.js": "github:discordjs/discord.js",
+		"discord.js-commando": "github:discordjs/Commando",
+		"dotenv": "^7.0.0",
+		"erlpack": "github:discordapp/erlpack",
+		"moment": "^2.24.0",
+		"moment-duration-format": "^2.2.2",
+		"winston": "^3.2.1",
+		"zlib-sync": "^0.1.4"
+	},
+	"devDependencies": {
+		"eslint": "^5.16.0",
+		"eslint-config-amber": "^2.0.0",
+		"eslint-plugin-json": "^1.4.0"
+	},
+	"eslintConfig": {
+		"extends": "amber",
+		"plugins": [
+			"json"
+		]
+	}
+}
