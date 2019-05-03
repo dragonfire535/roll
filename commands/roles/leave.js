@@ -23,7 +23,7 @@ module.exports = class LeaveCommand extends Command {
 
 	async run(msg, { role }) {
 		if (!roles.includes(role.id)) return msg.reply('This roll is not available to leave.');
-		if (msg.member.roles.has(role.id)) return msg.reply('You already have this roll.');
+		if (!msg.member.roles.has(role.id)) return msg.reply('You don\'t have this roll.');
 		await msg.member.roles.remove(role);
 		return msg.say(`Rolled out of the **${role.name}** roll!`);
 	}

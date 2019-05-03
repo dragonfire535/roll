@@ -23,7 +23,7 @@ module.exports = class JoinCommand extends Command {
 
 	async run(msg, { role }) {
 		if (!roles.includes(role.id)) return msg.reply('This roll is not available to join.');
-		if (!msg.member.roles.has(role.id)) return msg.reply('You don\'t have this roll.');
+		if (msg.member.roles.has(role.id)) return msg.reply('You already have this roll.');
 		await msg.member.roles.add(role);
 		return msg.say(`Rolled into the **${role.name}** roll!`);
 	}
