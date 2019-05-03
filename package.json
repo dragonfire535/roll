@@ -39,6 +39,7 @@
 		"erlpack": "github:discordapp/erlpack",
 		"moment": "^2.24.0",
 		"moment-duration-format": "^2.2.2",
+		"node-superfetch": "^0.1.9",
 		"winston": "^3.2.1",
 		"zlib-sync": "^0.1.4"
 	},
