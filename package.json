@@ -28,20 +28,17 @@
 	},
 	"homepage": "https://github.com/dragonfire535/roll#readme",
 	"engines": {
-		"node": ">=11"
+		"node": ">=12"
 	},
 	"dependencies": {
-		"@discordjs/uws": "^11.149.1",
 		"common-tags": "^1.8.0",
 		"discord.js": "github:discordjs/discord.js",
 		"discord.js-commando": "github:discordjs/Commando",
-		"dotenv": "^7.0.0",
-		"erlpack": "github:discordapp/erlpack",
+		"dotenv": "^8.0.0",
 		"moment": "^2.24.0",
 		"moment-duration-format": "^2.2.2",
 		"node-superfetch": "^0.1.9",
-		"winston": "^3.2.1",
-		"zlib-sync": "^0.1.4"
+		"winston": "^3.2.1"
 	},
 	"devDependencies": {
 		"eslint": "^5.16.0",
